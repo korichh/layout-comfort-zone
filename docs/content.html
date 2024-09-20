@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зона Комфорта</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/flatpickr.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script defer src="js/swiper.js"></script>
+    <script defer src="js/flatpickr.js"></script>
+    <script defer src="js/flatpickr-ru.js"></script>
+    <script defer src="js/flatpickr-uk.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="go-top"><a aria-label="Scroll to top" href="#"><svg width="412" height="464" viewBox="0 0 412 464" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M105.258 173.761C101.251 169.761 99 164.336 99 158.68C99 153.023 101.251 147.598 105.258 143.598L190.755 58.2722C192.735 56.2844 195.09 54.707 197.683 53.6306C200.277 52.5541 203.058 52 205.866 52C208.675 52 211.456 52.5541 214.05 53.6306C216.643 54.707 218.998 56.2844 220.978 58.2722L306.475 143.598C308.516 145.566 310.144 147.92 311.265 150.522C312.385 153.125 312.975 155.924 312.999 158.756C313.024 161.589 312.483 164.398 311.408 167.019C310.334 169.641 308.747 172.022 306.74 174.025C304.733 176.028 302.346 177.612 299.719 178.685C297.093 179.757 294.278 180.297 291.44 180.272C288.602 180.248 285.797 179.659 283.19 178.541C280.582 177.423 278.223 175.798 276.252 173.761L227.241 124.848L227.241 286.669C227.241 292.326 224.989 297.752 220.98 301.752C216.972 305.753 211.535 308 205.866 308C200.198 308 194.761 305.753 190.753 301.752C186.744 297.752 184.492 292.326 184.492 286.669L184.492 124.848L135.481 173.761C131.473 177.76 126.037 180.006 120.37 180.006C114.702 180.006 109.266 177.76 105.258 173.761Z" fill="#7EB0C3" />
+                    <path d="M206.071 336C223.045 336 239.324 342.743 251.326 354.745C263.328 366.747 270.071 383.026 270.071 400C270.071 416.974 263.328 433.253 251.326 445.255C239.324 457.257 223.045 464 206.071 464C189.097 464 172.819 457.257 160.816 445.255C148.814 433.253 142.071 416.974 142.071 400C142.071 383.026 148.814 366.747 160.816 354.745C172.819 342.743 189.097 336 206.071 336Z" fill="#7EB0C3" fill-opacity="0.3" />
+                </svg></a></div>
+        <section class="popup">
+            <div class="popup-inner">
+                <div class="popup-head">
+                    <div class="title">3D-тур</div>
+                    <button aria-label="close popup" class="close"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button>
+                </div>
+                <div class="popup-body"></div>
+            </div>
+        </section>
+        <nav class="mobile">
+            <div class="mobile-inner">
+                <div class="top">
+                    <a href="/index.html" class="logo"><img src="img/header/logo.webp" alt="logo" loading="lazy" width="239" height="86"></a>
+                    <button aria-label="close mobile" class="close"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="/office.html">Кабинеты</a></li>
+                    <li class="menu-item"><a href="/content.html">Цены и оплата</a></li>
+                    <li class="menu-item"><a href="/content.html">Расписание</a></li>
+                    <li class="menu-item"><a href="/content.html">Правила</a></li>
+                    <li class="menu-item"><a href="/content.html">О нас</a></li>
+                    <li class="menu-item"><a href="/content.html">Контакты</a></li>
+                </ul>
+                <a href="tel:+380630205225" class="phone">+38 (063) 020-52-25</a>
+                <div class="social">
+                    <span><a href="#" class="telegram"></a></span>
+                    <span><a href="#" class="viber"></a></span>
+                    <span><a href="#" class="instagram"></a></span>
+                    <span><a href="#" class="fmessenger"></a></span>
+                </div>
+                <div class="lang">
+                    <span><a href="#">Українська</a></span>
+                    <span><a href="#">Русский</a></span>
+                    <span><a href="#">English</a></span>
+                </div>
+            </div>
+        </nav>
+        <section class="action booking">
+            <div class="action-inner">
+                <div class="action-top">
+                    <h2 class="title">Забронировать кабинет</h2>
+                    <button aria-label="close booking" class="close"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button>
+                </div>
+                <form class="action-form">
+                    <div class="booking-date">
+                        <div class="date-list booking-list">
+                            <div class="row">
+                                <span>18.03</span>
+                                <div class="office-list booking-list">
+                                    <div class="row">
+                                        <span>Кабинет 1</span>
+                                        <div class="time-list booking-list">
+                                            <div class="row"><input checked type="checkbox" name="time" value="7:00-8:00"><span>7:00-8:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                            <div class="row"><input checked type="checkbox" name="time" value="8:00-9:00"><span>8:00-9:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span>Кабинет 2</span>
+                                        <div class="time-list booking-list">
+                                            <div class="row"><input checked type="checkbox" name="time" value="7:00-8:00"><span>7:00-8:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                            <div class="row"><input checked type="checkbox" name="time" value="8:00-9:00"><span>8:00-9:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span>19.03</span>
+                                <div class="office-list booking-list">
+                                    <div class="row">
+                                        <span>Кабинет 1</span>
+                                        <div class="time-list booking-list">
+                                            <div class="row"><input checked type="checkbox" name="time" value="7:00-8:00"><span>7:00-8:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                            <div class="row"><input checked type="checkbox" name="time" value="8:00-9:00"><span>8:00-9:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <span>Кабинет 2</span>
+                                        <div class="time-list booking-list">
+                                            <div class="row"><input checked type="checkbox" name="time" value="7:00-8:00"><span>7:00-8:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                            <div class="row"><input checked type="checkbox" name="time" value="8:00-9:00"><span>8:00-9:00</span><button class="remove"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-summary">
+                        <span class="price-caption">Стоимость:</span>
+                        <h2 class="price">500 грн</h2>
+                        <div class="btns">
+                            <button type="submit" class="btn btn-prim">Забронировать</button>
+                            <button type="reset" class="btn cancel-book">Отмена</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="action profile">
+            <div class="action-inner">
+                <div class="action-top">
+                    <button aria-label="close booking" class="close"><img src="img/icons/close.svg" alt="icon close" loading="lazy" width="30" height="30"></button>
+                </div>
+                <div class="action-content">
+                    <div class="avatar"><img src="img/icons/profile.svg" alt="icon profile" loading="lazy" width="100" height="100"></div>
+                    <div class="username">user@name</div>
+                    <ul class="links">
+                        <li><a href="#">Мои бронирования</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <header class="header">
+            <nav class="topnav">
+                <div class="container">
+                    <div class="topnav-inner">
+                        <div class="left">
+                            <span><a href="https://www.360expert.kyiv.ua/temp/office_03_all/index.html" target="_blank" class="address">Киев, ул. Елены Телиги, 25, оф. 1, 2</a></span>
+                            <button class="select-lang">
+                                <span>Русский</span>
+                                <ul class="list">
+                                    <li><a href="#">Українська</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </button>
+                        </div>
+                        <div class="right">
+                            <span><a href="tel:+380630205225" class="phone">+38 (063) 020-52-25</a></span>
+                            <span><a href="#" class="telegram"></a></span>
+                            <span><a href="#" class="viber"></a></span>
+                            <span><a href="#" class="instagram"></a></span>
+                            <span><a href="#" class="fmessenger"></a></span>
+                            <span><a href="#" class="orders">Мои заказы</a></span>
+                            <span><a href="#" class="profile" data-profile>Личный кабинет</a></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="/index.html" class="logo"><img src="img/header/logo.webp" alt="logo" loading="lazy" width="239" height="86"></a>
+                        </div>
+                        <div class="right">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="/office.html">Кабинеты</a></li>
+                                <li class="menu-item"><a href="/content.html">Цены и оплата</a></li>
+                                <li class="menu-item"><a href="/content.html">Расписание</a></li>
+                                <li class="menu-item"><a href="/content.html">Правила</a></li>
+                                <li class="menu-item"><a href="/content.html">О нас</a></li>
+                                <li class="menu-item"><a href="/content.html">Контакты</a></li>
+                            </ul>
+                            <a aria-label="go to profile page" href="#" class="profile" data-profile></a>
+                            <button aria-label="open mobile" class="burger"><img src="img/icons/burger.svg" alt="icon burger" loading="lazy" width="40" height="40"></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="content">
+                <div class="container">
+                    <div class="content-inner">
+                        <h1>HTML Ipsum Presents</h1>
+                        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                        <picture>
+                            <source srcset="img/office/Офис1_Туалет.webp 1600w,img/office/Офис1_Туалет-1440.webp 1440w,img/office/Офис1_Туалет-768.webp 768w">
+                            <source srcset="img/office/Офис1_Туалет.jpg">
+                            <img src="img/office/Офис1_Туалет.jpg" alt="Офис1_Туалет" width="1170" height="637">
+                        </picture>
+                        <h2>Header Level 2</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ol>
+                        <div class="content-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Contact</th>
+                                        <th>Country</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Centro comercial Moctezuma</td>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                        </blockquote>
+                        <h3>Header Level 3</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ul>
+                        <picture>
+                            <source srcset="img/office/Офис2_Кухня.webp 1600w,img/office/Офис2_Кухня-1440.webp 1440w,img/office/Офис2_Кухня-768.webp 768w">
+                            <source srcset="img/office/Офис2_Кухня.jpg">
+                            <img src="img/office/Офис2_Кухня.jpg" alt="Офис1_Туалет" width="1170" height="637">
+                        </picture>
+                        <h4>Header Level 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem non ipsum temporibus blanditiis voluptatum consectetur recusandae nesciunt laborum corporis quibusdam! Ad iure beatae, quas facere repellendus modi dignissimos non adipisci?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius minus quo, suscipit tempora laboriosam vel! Voluptas modi corrupti expedita, in rerum error architecto nostrum harum eos itaque impedit placeat esse?</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="top">
+                    <div class="container">
+                        <a href="#" class="caption">Кабинеты в Украине</a>
+                        <div class="row">
+                            <div class="column">
+                                <a href="#">Все помещения в Украине</a>
+                                <a href="#">Лофты в Украине</a>
+                                <a href="#">Спорт в Украине</a>
+                                <a href="#">Коворкинги в Украине</a>
+                                <a href="#">Бьюти в Украине</a>
+                                <a href="#">Залы в Украине</a>
+                                <a href="#">Аренда кабинета на час</a>
+                                <a href="#">Аренда кабинета на час</a>
+                                <a href="#">Кабинеты психолога в Украине</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">О нас</a>
+                                <a href="#">Контакты</a>
+                                <a href="#">Каталог</a>
+                                <a href="#">Правила</a>
+                                <a href="#">Арендодателям</a>
+                            </div>
+                            <div class="column mail">
+                                <a href="#">zonak@gmail.com</a>
+                                <span>вопросы и предложения</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <div class="copyright">© 2024 Зона Комфорта. Почасовая аренда помещений для работы и праздников</div>
+                        <div class="row">
+                            <a href="#">Пользовательское соглашение</a>
+                            <a href="#">Политика обработки персональных данных</a>
+                            <a href="#">Карта сайта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
